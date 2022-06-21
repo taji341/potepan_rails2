@@ -1,3 +1,62 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.update-content {
+  border-bottom: 1px solid #eaedef;
+  padding: 20px;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 10px;
+  font-size: 16px;
+}
+
+.user-nav {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.user-nav-pc .active {
+  border-right: 3px solid #337ab7;
+  color: #337ab7;
+}
+
+.user-nav-mobile .active {
+  border-bottom: 3px solid #4a90e2;
+  float: left;
+  color: #337ab7;
+}
+
+.user-view {
+  background-color: #e2e2e2;
+  margin-top: 60px;
+}
+
+.user-view-box {
+  border: 2px solid #e2e2e2;
+  background-color: white;
+  margin: 50px auto;
+  max-width: 880px;
+}
+
+.passive a {
+  color: black;
+}
+
+.host-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50px;
+}
+
+.icon-box {
+  text-align: center;
+}

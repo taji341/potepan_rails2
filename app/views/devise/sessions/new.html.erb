@@ -4,12 +4,12 @@
     <p class="my-4">ログイン</p>
       <div class="device_inner">
         <div class="field">
-          <%= f.label :email %>
+          <%= f.label :email, "メールアドレス" %>
           <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
         </div>
 
         <div class="field">
-          <%= f.label :password %>
+          <%= f.label :password, "パスワード" %>
           <%= f.password_field :password, autocomplete: "current-password" %>
         </div>
 

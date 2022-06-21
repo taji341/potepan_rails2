@@ -28,16 +28,16 @@
       </div>
       <div class="header-right-nav">
         <% if user_signed_in? %>
-          <div class="user_name">aaa<%= current_user.name %></div>
+          <div class="user_name"><%= current_user.name %></div>
           <div class="dropdown">
             <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <%= image_tag 'default_icon.jpeg', class: "user_icon" %>
+              <%= image_tag current_user.image.to_s, class: "user_icon" %>
             </button>
             <ul class="dropdown-menu" aria-labelledby="dLabel">
-              <li><%= link_to "ルーム登録", new_reservation_path %></li>
+              <li><%= link_to "ルーム登録", new_room_path %></li>
               <li><%= link_to "予約済みルーム一覧", reservations_path %></li>
               <li><%= link_to "登録済みルーム一覧", rooms_path %></li>
-              <li><%= link_to "設定", users_acount_path %></li>
+              <li><%= link_to "設定", user_path(current_user.id) %></li>
               <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete %></li>
             </ul>
           </div>
@@ -51,10 +51,10 @@
     </div>
   </header>
   <% if notice %>
-    <p><%= notice %></p>
+    <p class="notice"><%= notice %></p>
   <% end %>
   <% if alert %>
-    <p><%= alert %></p>
+    <p class="alert"><%= alert %></p>
   <% end %>
     <%= yield %>
   <footer>

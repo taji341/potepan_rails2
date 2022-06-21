@@ -1,3 +1,83 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+.room-posts {
+  padding: 30px 60px;
+table {
+  min-width: 80%;
+}
+}
+
+tr th {
+  padding: 20px;
+  font-size: 16px;
+}
+
+tr {
+  border-top: 1px solid #eaedef;
+  border-bottom: 1px solid #eaedef;
+}
+
+tr img {
+  object-fit: cover;
+  width: 240px;
+  height: 140px;
+}
+
+tr td {
+  padding: 20px;
+  font-size: 16px;
+}
+
+.price::before {
+  content: "￥";
+  padding-right: 3px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+.room-nav {
+  font-size: 18px;
+  padding: 20px;
+}
+
+.room-nav-pc li {
+  border-right: 3px solid #337ab7;
+}
+
+.room-nav-mobile li {
+  border-bottom: 3px solid #4a90e2;
+  float: left;
+}
+
+.room-view {
+  background-color: #e2e2e2;
+
+}
+
+.room-view-box {
+  border: 2px solid #e2e2e2;
+  background-color: white;
+  margin: 50px auto;
+  max-width: 880px;
+}
+
+.update-content {
+  border-bottom: 1px solid #eaedef;
+  padding: 20px;
+  margin: 0 15px;
+  font-size: 16px;
+}
+
+.required-a::after {
+  content: "必須";
+  color: #fff;
+  background-color: #ff0000a8;
+  font-size: 12px;
+  border-radius: 5px;
+  padding: 4px;
+  margin: 0 5px;
+}

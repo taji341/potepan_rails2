@@ -48,6 +48,7 @@ span {
   object-fit: cover;
   border-radius: 5px;
   margin-bottom: 25px;
+  outline: none;
 }
 
 footer {
@@ -151,7 +152,14 @@ body {
     }
 }
 
+button:focus {
+  outline: none;
+}
 
-
+@media (max-width: 1024px) {
+.header-form {
+  display: none;
+}
+}
 
 
