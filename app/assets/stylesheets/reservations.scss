@@ -1,0 +1,39 @@
+// Place all the styles related to the reservations controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.reservations-new {
+  padding: 30px 0;
+}
+
+.reservations-new-nav {
+  padding: 20px;
+  border: 1px solid #eaedef;
+}
+
+.reservations-new-check-content {
+  border-bottom: 1px solid #eaedef;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.price-icon::before {
+  content: "￥";
+  padding-right: 3px;
+}
+
+.reservations-new-date-select {
+  padding: 15px 0;
+}
+
+.reservations-new-check-content {
+  border-bottom: 1px solid #eaedef;
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+}
+
+.host-icon {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 50px;
+}

@@ -1,0 +1,32 @@
+<div class="container-fiuld user"> 
+  <div class="row">
+    <div class="col-md-12 user-view">
+      <div class="user-view-box">
+        <div class="update-content">
+          <div class="row">
+            <div class="col-md-3">予約した部屋</div>
+            <div class="col-md-9"><%=  @reservation.room.name %></div>
+          </div>
+        </div>
+        <div class="update-content">
+          <div class="row">
+            <div class="col-md-3">開始日</div>
+            <div class="col-md-9"><%= @reservation.start_day %></div>
+          </div>
+        </div>
+        <div class="update-content">
+          <div class="row">
+            <div class="col-md-3">終了日</div>
+            <div class="col-md-9"><%= @reservation.end_day %></div>
+          </div>
+        </div>
+        <div class="update-content">
+          <div class="row">
+            <div class="col-md-3">価格</div>
+            <div class="col-md-9"><%= @reservation.room.price %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div
