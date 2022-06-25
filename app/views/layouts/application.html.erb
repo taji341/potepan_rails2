@@ -20,11 +20,11 @@
         <div class="header-form">
           <%= search_form_for @q, url: rooms_search_path do |f| %>
             <div class="search">
-              <%= f.search_field :name_cont, placeholder: "エリア", class: "search-field" %>
+              <%= f.search_field :address_cont, placeholder: "エリア", class: "search-field" %>
               <i class="fa-solid fa-location-dot"></i>
             </div>
             <div class="search">
-              <%= f.search_field :name_cont, placeholder: "キーワード", class: "search-field" %>
+              <%= f.search_field :name_or_address_or_introduction_cont, placeholder: "キーワード", class: "search-field" %>
               <i class="fa-solid fa-magnifying-glass"></i>
             </div>
             <%= f.submit "検索", class: "btn btn-secondary" %>
