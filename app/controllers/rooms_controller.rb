@@ -1,4 +1,5 @@
 class RoomsController < ApplicationController
+  
   def index
     @rooms = Room.all
   end
@@ -17,23 +18,15 @@ class RoomsController < ApplicationController
   end
 
   def show
-  end
-
-  def edit
-  end
-
-  def update
-  end
-
-  def destroy
-  end
-
-  def search
+    @room = Room.find(params[:id])
+    @reservation = Reservation.new
   end
 
   private
 
   def room_params
-    params.require(:room).permit(:name, :introduction, :price, :address, :image).merge(user_id: current_user.id)
+    params.require(:room).permit(:name, :introduction, :price, :address, :image).
+    merge(user_id: current_user.id)
   end
+
 end
